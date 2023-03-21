@@ -6,19 +6,22 @@ namespace Pelicula
 
     public class Pelicula
     {
-        private string Titulo;
-        private int Año;
-        private string Pais;
-        private string Director;
+        private string titulo;
+        private int año;
+        private string pais;
+        private string director;
         //Campos
         private List<Actor> actores = new List<Actor>();
 
         //Constructores
-     
+        public Pelicula(){}
+        public Pelicula(string titulo, int año);
+
         //Métodos
      
         public void Imprime()
         {
+            Console.WriteLine($"{titulo} ({año})");
      //       Console.WriteLine($"{titulo} ({año})");
 
         }
