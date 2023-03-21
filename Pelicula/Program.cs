@@ -57,6 +57,13 @@ namespace Pelicula
             p1.SetTitulo("La La Land");
             p1.SetAño(2016);
             Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño());
+
+            List<Pelicula> peliculas = new List<Pelicula>();
+            peliculas.Add(new Pelicula ("1"));
+            peliculas.Add(new Pelicula ("2"));
+            peliculas.Add(new Pelicula ("3"));
+            peliculas.Add(new Pelicula ("4"));
+            peliculas.Add(new Pelicula ("5"));
         }
     }
 }
