@@ -6,10 +6,10 @@ namespace Pelicula
 
     public class Pelicula
     {
-        public string Titulo;
-        public int Año;
-        public string Pais;
-        public string Director;
+        private string Titulo;
+        private int Año;
+        private string Pais;
+        private string Director;
         //Campos
         private List<Actor> actores = new List<Actor>();
 
@@ -51,8 +51,8 @@ namespace Pelicula
         {
             Pelicula p1 = new Pelicula();
             Pelicula p2 = new Pelicula();
-            p1.SetTitulo("mmmm");
-            p1.SetAño(2004);
+            p1.SetTitulo("La La Land");
+            p1.SetAño(2016);
             Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño());
         }
     }
