@@ -80,24 +80,23 @@ namespace Pelicula
             Pelicula p2 = new Pelicula();
             p1.SetTitulo("La La Land");
             p1.SetAño(2016);
-            Console.WriteLine("{0}({1})", p1.GetTitulo(), p1.GetAño());
-            p1.Imprime();
-
+            Console.WriteLine("> Películas:");
+            Console.WriteLine("{0} ({1})", p1.GetTitulo(), p1.GetAño());
             List<Pelicula> peliculas = new List<Pelicula>();
-            peliculas.Add(new Pelicula ("1", 2020));
-            peliculas.Add(new Pelicula ("2", 2012));
-            peliculas.Add(new Pelicula ("3", 2005));
-            peliculas.Add(new Pelicula ("4", 1986));
-            peliculas.Add(new Pelicula ("5", 2013));
+            peliculas.Add(new Pelicula ("Emos vs Darketos", 2008));
+            peliculas.Add(new Pelicula ("Yakuza: Like a Dragon", 2020));
+            peliculas.Add(new Pelicula ("Kaguya-sama: Love is War, La película", 2022));
+            peliculas.Add(new Pelicula ("Marcianos vs Mexicanos", 1986));
+            peliculas.Add(new Pelicula ("Pulp Fiction", 1994));
 
             foreach(Pelicula pelicula in peliculas)
             {
                 pelicula.Imprime();
             }
 
+            Console.WriteLine("> Actores:");
             p1.AgregaActor(new Actor("Ryan Gosling", 1980));
             p1.AgregaActor(new Actor("Emma Stone", 1988));
-
             p1.ImprimeActores();
         }
     }
