@@ -26,10 +26,10 @@ namespace Pelicula
         public int GetAño(){return año;}
         public string GetPais(){return pais;}
         public string GetDirector(){return director;}
-        public void SetTitulo(string title){title=titulo;}
-        public void SetAño(int year){year=año;}
-        public void SetPais(string country){country=pais;}
-        public void SetDirector(string direc){direc=director;}
+        public void SetTitulo(string title){titulo=title;}
+        public void SetAño(int year){año=year;}
+        public void SetPais(string country){pais=country;}
+        public void SetDirector(string direc){director=direc;}
         public void AgregaActor(Actor actor){actores.Add(actor);}
         public void ImprimeActores()
         {
